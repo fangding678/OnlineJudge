@@ -1,0 +1,9 @@
+.DS_Store
+*.swp
+.vscode/
+cmake_build/
+*cmake-build*
+.idea/**
+*/.idea/**
+
+build/
