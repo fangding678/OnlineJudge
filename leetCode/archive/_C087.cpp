@@ -4,15 +4,15 @@
 
 using namespace std;
 
-// LeetCode, Interleaving String
-// ¶¯¹æ£¬Ê±¼ä¸´ÔÓ¶ÈO(n^3)£¬¿Õ¼ä¸´ÔÓ¶ÈO(n^3)
+// leetCode, Interleaving String
+// ï¿½ï¿½ï¿½æ£¬Ê±ï¿½ä¸´ï¿½Ó¶ï¿½O(n^3)ï¿½ï¿½ï¿½Õ¼ä¸´ï¿½Ó¶ï¿½O(n^3)
 class Solution1 {
 public:
     bool isScramble(string s1, string s2) {
         const int N = s1.size();
         if (N != s2.size()) return false;
-        // f[n][i][j]£¬±íÊ¾³¤¶ÈÎªn£¬ÆðµãÎªs1[i]ºÍ
-        // ÆðµãÎªs2[j]Á½¸ö×Ö·û´®ÊÇ·ñ»¥Îªscramble
+        // f[n][i][j]ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Îªnï¿½ï¿½ï¿½ï¿½ï¿½Îªs1[i]ï¿½ï¿½
+        // ï¿½ï¿½ï¿½Îªs2[j]ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªscramble
         bool f[N + 1][N][N];
         fill_n(&f[0][0][0], (N + 1) * N * N, false);
 

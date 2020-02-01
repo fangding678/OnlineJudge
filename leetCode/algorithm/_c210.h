@@ -12,10 +12,6 @@ using namespace std;
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        cout << endl;
-    }
-
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
         vector<vector<int>> graph(numCourses);
         vector<int> indegree(numCourses, 0), bfs;
         for (auto p : prerequisites) {
@@ -38,16 +34,29 @@ public:
                 }
             }
         }
-        return bfs.size() == numCourses;
+        if (bfs.size() != numCourses) {
+            bfs.clear();
+        }
+        return bfs;
+    }
+
+    void _print(vector<int>& vec) {
+        for (auto v : vec) {
+            cout << v << ",";
+        }
+        cout << endl;
     }
 };
 
 
 void func() {
     Solution solution;
-    int s = 15;
-    vector<int> nums{2,3,1,1,1,1,1};
-    cout << "res = " << solution.minSubArrayLen(s, nums) << endl;
+    int numCourses = 2;
+    vector<vector<int>> prerequisites;
+    vector<int> tmp{1,0};
+    prerequisites.push_back(tmp);
+    vector<int> res = solution.findOrder(numCourses, prerequisites);
+    solution._print(res);
 }
 
 #endif //ONLINEJUDGE__C210_H
