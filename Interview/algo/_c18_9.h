@@ -8,12 +8,22 @@
 class Middle {
 public:
     vector<int> getMiddle(vector<int> A, int n) {
-//        sort(A.begin(), A.end());
-//        vector<int> res;
-//        for (int i = 0; i < A.size(); ++i) {
-//            res.push_back(A[i / 2]);
-//        }
-//        return res;
+        vector<int> res;
+        int tmp;
+        if (n > 0) {
+            res.push_back(A[0]);
+        }
+        for (int i = 1; i < n; ++i) {
+            tmp = A[i];
+            int j = i;
+            while (j > 0 && tmp < A[j-1]) {
+                A[j] = A[j-1];
+                --j;
+            }
+            A[j] = tmp;
+            res.push_back(A[i/2]);
+        }
+        return res;
     }
 };
 
