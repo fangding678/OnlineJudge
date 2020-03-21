@@ -15,8 +15,7 @@
 using namespace std;
 
 #include "algo/utils.h"
-#include "algo/_c020.h"
-
+#include "algo/_c027.h"
 
 
 int main()

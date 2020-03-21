@@ -37,6 +37,5 @@ private:
 
 void func() {
     Solution solution;
-    cout << solution << endl;
 }
 #endif //ONLINEJUDGE__C020_H
