@@ -7,8 +7,12 @@
 
 template <typename T1>
 void _print(vector<T1> v) {
+    if (v.size() < 1) {
+        cout << "empty arr!" << endl;
+        return;
+    }
     for (auto i : v) {
-        cout << i << " ";
+        cout << i << "\t";
     }
     cout << endl;
 }

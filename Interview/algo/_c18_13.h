@@ -7,8 +7,12 @@
 
 class AlphaMatrix {
 public:
-    int findAlphaMatrix(vector<string> dic, int n) {
-        // write code here
+    int findAlphaMatrix(vector<int> dic, int n) {
+        int s = 0;
+        for (int k = 0; k < dic.size(); ++k) {
+            dic[k] %= n;
+        }
+        int i = 0, j = 0;
     }
 };
 
