@@ -12,22 +12,21 @@
 #include <map>
 #include <set>
 #include <cmath>
-#include <climits>
 #include <utility>
 #include <unordered_map>
 using namespace std;
 
-#include "algo/utils.h"
-//#include "algo/_c18_13.h"
-//#include "algo/_sin2.h"
-//#include "algo/_kmean.h"
-#include "algo/_stock.h"
+#include "header/utils.h"
+#include "header/_sort.h"
+#include "header/_bisearch.h"
+#include "header/_kmean.h"
 
 
 int main()
 {
     cout << "begin------------" << endl;
-    func();
+//    func();
+    test1();
     cout << "end------------" << endl;
     return 0;
 }
