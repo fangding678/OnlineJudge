@@ -88,7 +88,7 @@ void func() {
     string word = "ads";
     WordDictionary* obj = new WordDictionary();
     obj->addWord(word);
-    bool param_2 = obj->search(".ds");
+    bool param_2 = obj->search("...");
     cout << param_2 << endl;
 }
 
