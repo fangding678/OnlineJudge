@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// leetCode, Interleaving String
+// leetcode, Interleaving String
 // ���棬ʱ�临�Ӷ�O(n^3)���ռ临�Ӷ�O(n^3)
 class Solution1 {
 public:

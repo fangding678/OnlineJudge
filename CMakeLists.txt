@@ -27,7 +27,7 @@ include_directories("C++ Primer/VisualStudio2012/19")
 include_directories("C++ Primer/VisualStudio2012/2")
 include_directories("C++ Primer/VisualStudio2012/6")
 include_directories("C++ Primer/VisualStudio2012/7")
-include_directories(leetCode/algorithm)
+include_directories(leetcode/exercise)
 include_directories(华为OJ/future_net)
 
 add_executable(OnlineJudge
@@ -618,10 +618,10 @@ add_executable(OnlineJudge
         "C++ Primer/VisualStudio2012/9/substr.cpp"
         "C++ Primer/VisualStudio2012/9/useConvs.cpp"
         "C++ Primer/VisualStudio2012/Version_test.h"
-        leetCode/algorithm/_c207.h
-        leetCode/algorithm/_c208.h
-        leetCode/algorithm/_c209.h
-        leetCode/algorithm/_c210.h
+        leetcode/exercise/_c207.h
+        leetcode/exercise/_c208.h
+        leetcode/exercise/_c209.h
+        leetcode/exercise/_c210.h
         leetCode/archive/_C001.cpp
         leetCode/archive/_C002.cpp
         leetCode/archive/_C003.cpp
@@ -1153,4 +1153,4 @@ add_executable(OnlineJudge
         牛客网笔试/archive/_蘑菇街2016研发工程师_投篮游戏.cc
         牛客网笔试/archive/_蘑菇街2016研发工程师_搬圆桌.cc
         牛客网笔试/archive/_蘑菇街2016研发工程师_最大间隔.cc
-        牛客网笔试/archive/_蘑菇街2016研发工程师_聊天.cc)
+        牛客网笔试/archive/_蘑菇街2016研发工程师_聊天.cc leetcode/utils/print_helper.h)

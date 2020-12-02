@@ -6,7 +6,8 @@
 #include <vector>
 using namespace std;
 
-#include "algorithm/_c212.h"
+#include "../_utils/_debug.h"
+#include "exercise/_c212.h"
 
 
 int main()

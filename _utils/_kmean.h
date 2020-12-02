@@ -1,6 +1,19 @@
 //
 // Created by fangding on 2020-07-17.
 //
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <vector>
+#include <queue>
+#include <stack>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <cmath>
+#include <utility>
+#include <unordered_map>
+using namespace std;
 
 #ifndef ONLINEJUDGE__KMEAN_H
 #define ONLINEJUDGE__KMEAN_H

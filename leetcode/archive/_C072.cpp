@@ -35,7 +35,7 @@ public:
 
 int func()
 {
-    string s1 = "algorithm";
+    string s1 = "algo_helper";
     string s2 = "altruistic";
     Solution S;
     cout<<S.minDistance(s1, s2)<<endl;

@@ -4,6 +4,10 @@
 
 #ifndef ONLINEJUDGE__C211_H
 #define ONLINEJUDGE__C211_H
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
 
 const int indNum = 26;
 typedef struct TrieNode {

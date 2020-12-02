@@ -1,6 +1,19 @@
 //
 // Created by fangding on 2020-02-02.
 //
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <vector>
+#include <queue>
+#include <stack>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <cmath>
+#include <utility>
+#include <unordered_map>
+using namespace std;
 
 #ifndef ONLINEJUDGE_UTILS_H
 #define ONLINEJUDGE_UTILS_H
