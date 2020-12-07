@@ -11,11 +11,11 @@ set(CMAKE_CXX_FLAGS "${BASE_CXX_FLAGS}")
 
 
 set(SOURCE_FILES main.cc)
-set(SOURCE_FILES exercise)
-set(SOURCE_FILES archive)
 add_executable(main ${SOURCE_FILES})
 
-aux_source_directory(../_utils srcs)
+aux_source_directory(exercise srcs)
+aux_source_directory(archive srcs)
+include_directories(../_utils)
 
 
 #message(STATUS "link_libs:${link_libs}")
