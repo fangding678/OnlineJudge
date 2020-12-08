@@ -4,6 +4,8 @@
 
 #ifndef ONLINEJUDGE__C214_H
 #define ONLINEJUDGE__C214_H
+#include <string>
+using namespace std;
 
 void func() {
     string res = "ads";

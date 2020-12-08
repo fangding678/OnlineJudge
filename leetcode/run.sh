@@ -20,10 +20,14 @@ echo "--------------------------------------------------------------------------
 
 function func1()
 {
-    for elem in `ls t_archive`
+    cd ..
+    for elem in exercise/*
     do
-        echo "$elem"
+        elem1=${elem:0:11}0${elem:11}
+        elem2=${elem1/cpp/h}
+        echo "$elem2"
+#        mv ${elem} ${elem2}
     #    sed 's/main/func/g' t_archive/$elem > t_archive/_$elem
     done
 }
-
+func1
