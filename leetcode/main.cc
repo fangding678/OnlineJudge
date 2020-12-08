@@ -10,7 +10,7 @@ using namespace std;
 #include "exercise/_c0213.h"
 
 
-int main()
+int main(int argc,char *argv[])
 {
     cout << "begin------------" << endl;
     func();
