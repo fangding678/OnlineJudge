@@ -2,8 +2,6 @@
 // Created by fangding on 2020-01-31.
 //
 
-#ifndef ONLINEJUDGE__C208_H
-#define ONLINEJUDGE__C208_H
 
 #include <iostream>
 #include <vector>
@@ -103,4 +101,3 @@ void func() {
     cout << "r4=" << r4 << endl;
 }
 
-#endif //ONLINEJUDGE__C208_H

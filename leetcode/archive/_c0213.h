@@ -2,8 +2,6 @@
 // Created by fangding on 2020-02-01.
 //
 
-#ifndef ONLINEJUDGE__C213_H
-#define ONLINEJUDGE__C213_H
 #include <vector>
 using namespace std;
 
@@ -42,4 +40,3 @@ void func() {
     cout << solution.rob(vec) << endl;
 }
 
-#endif //ONLINEJUDGE__C213_H

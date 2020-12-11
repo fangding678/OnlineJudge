@@ -2,8 +2,6 @@
 // Created by fangding on 2020-02-01.
 //
 
-#ifndef ONLINEJUDGE__C214_H
-#define ONLINEJUDGE__C214_H
 #include <string>
 #include <algorithm>
 #include "__debug"
@@ -39,17 +37,17 @@ public:
 class Solution {
 public:
 
-    void get_next(string &s1, vector<int> &next) {
+    void get_nextVec(string &s1, vector<int> &nextVec) {
         int i = 0;
         int j = -1;
-        next[i] = j;
+        nextVec[i] = j;
         while (i < s1.size()-1) {
             if (j < 0 || s1[i] == s1[j]) {
                 ++i;
                 ++j;
-                next[i] = j;
+                nextVec[i] = j;
             } else {
-                j = next[j];
+                j = nextVec[j];
             }
         }
     }
@@ -62,10 +60,10 @@ public:
         string s2 = s;
         reverse(s1.begin(), s1.end());
         s2 = s + "#" + s1;
-        vector<int> next(s2.size(), 0);
-        get_next(s2, next);
-//        _print(next);
-        return s1.substr(0, s1.size() - next[s2.size()-1] - 1) + s;
+        vector<int> nextVec(s2.size(), 0);
+        get_nextVec(s2, nextVec);
+//        _print(nextVec);
+        return s1.substr(0, s1.size() - nextVec[s2.size()-1] - 1) + s;
     }
 };
 
@@ -85,4 +83,3 @@ void func() {
     cout << str3.size() << endl;
 }
 
-#endif //ONLINEJUDGE__C214_H

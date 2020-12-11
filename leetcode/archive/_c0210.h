@@ -2,8 +2,6 @@
 // Created by fangding on 2020-01-31.
 //
 
-#ifndef ONLINEJUDGE__C210_H
-#define ONLINEJUDGE__C210_H
 #include <iostream>
 #include <vector>
 #include <string>
@@ -59,4 +57,3 @@ void func() {
     solution._print(res);
 }
 
-#endif //ONLINEJUDGE__C210_H

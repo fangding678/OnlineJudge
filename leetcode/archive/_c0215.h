@@ -2,9 +2,8 @@
 // Created by fangding on 2020-02-01.
 //
 
-#ifndef ONLINEJUDGE__C215_H
-#define ONLINEJUDGE__C215_H
 #include <string>
+#include <vector>
 using namespace std;
 
 class Solution {
@@ -51,4 +50,3 @@ void func() {
     cout << solution.findKthLargest(vec1, 2) << endl;
 }
 
-#endif //ONLINEJUDGE__C215_H

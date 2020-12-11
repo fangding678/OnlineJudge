@@ -2,8 +2,6 @@
 // Created by fangding on 2020-01-31.
 //
 
-#ifndef ONLINEJUDGE__C209_H
-#define ONLINEJUDGE__C209_H
 #include <iostream>
 #include <vector>
 #include <string>
@@ -45,4 +43,3 @@ void func() {
     cout << "res = " << solution.minSubArrayLen(s, nums) << endl;
 }
 
-#endif //ONLINEJUDGE__C209_H

@@ -2,8 +2,6 @@
 // Created by fangding on 2020-02-01.
 //
 
-#ifndef ONLINEJUDGE__C212_H
-#define ONLINEJUDGE__C212_H
 #include <iostream>
 #include <string>
 #include <vector>
@@ -141,4 +139,3 @@ void func() {
     cout << flag_end << endl;
 }
 
-#endif //ONLINEJUDGE__C212_H
