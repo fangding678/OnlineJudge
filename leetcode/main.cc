@@ -7,7 +7,7 @@
 using namespace std;
 
 #include "../_utils/_debug.h"
-#include "exercise/_c0218.h"
+#include "exercise/_c0220.h"
 
 
 int main(int argc,char *argv[])

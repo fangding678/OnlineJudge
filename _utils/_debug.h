@@ -31,6 +31,18 @@ void _print(vector<T1> v) {
 }
 
 template <typename T1>
+void _print(vector<vector<T1>> vv) {
+    if (vv.size() < 1) {
+        cout << "empty two dim arr!" << endl;
+        return;
+    }
+    for (auto &v : vv) {
+        _print(v);
+    }
+    cout << endl;
+}
+
+template <typename T1>
 void _print(T1 nums, int n) {
     if (n < 1) {
         cout << "empty arr!" << endl;
