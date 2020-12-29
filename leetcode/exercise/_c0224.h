@@ -16,7 +16,11 @@ public:
 
 void func() {
     Solution solution;
-    string str = "ads";
-    cout << str << endl;
+    string str1 = "1 + 1";
+    string str2 = " 2-1 + 2 ";
+    string str3 = "(1+(4+5+2)-3)+(6+8)";
+    cout << solution.calculate(str1) << endl;
+    cout << solution.calculate(str2) << endl;
+    cout << solution.calculate(str3) << endl;
 }
 
