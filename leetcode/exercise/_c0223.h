@@ -9,6 +9,27 @@ using namespace std;
 
 class Solution {
 public:
+    bool isOverLap(int A, int B, int C, int D, int E, int F, int G, int H) {
+        if (C >= E && G >= A && D >= F && H >= B) {
+            return true;
+        }
+        return false;
+    }
+
+    int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
+        int area1 = (C-A) * (D-B);
+        int area2 = (G-E) * (H-F);
+        int lapArea = 0;
+        if (isOverLap(A, B, C, D, E, F, G, H)) {
+            lapArea = (min(C, G) - max(A, E)) * (min(H, D) - max(B, F));
+        }
+        return area1 - lapArea + area2;
+    }
+};
+
+// error
+class Solution1 {
+public:
     bool isInArea(int x, int y, int A, int B, int C, int D) {
         if (x >= A && x <= C && y >= B && y <= D) {
             return true;
