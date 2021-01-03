@@ -71,6 +71,15 @@ void _print(stack<T3> st) {
     cout << endl;
 }
 
+template <typename T3>
+void _print(deque<T3> de) {
+    while (!de.empty()) {
+        cout << de.front() << " ";
+        de.pop_front();
+    }
+    cout << endl;
+}
+
 template <typename T4>
 void _print(set<T4> st) {
     for (auto s : st) {
