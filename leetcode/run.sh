@@ -31,3 +31,15 @@ function batch_process()
     done
 }
 
+function batch_copy()
+{
+    cd ..
+    for i in {235..242}
+    do
+        echo $i
+        cmd="cp exercise/_c0xxx.h exercise/_c0${i}.h"
+        echo ${cmd}
+        eval ${cmd}
+    done
+}
+

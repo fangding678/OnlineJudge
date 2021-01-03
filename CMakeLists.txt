@@ -1153,4 +1153,4 @@ add_executable(OnlineJudge
         牛客网笔试/archive/_蘑菇街2016研发工程师_投篮游戏.cc
         牛客网笔试/archive/_蘑菇街2016研发工程师_搬圆桌.cc
         牛客网笔试/archive/_蘑菇街2016研发工程师_最大间隔.cc
-        牛客网笔试/archive/_蘑菇街2016研发工程师_聊天.cc leetcode/utils/print_helper.h)
+        牛客网笔试/archive/_蘑菇街2016研发工程师_聊天.cc leetcode/utils/print_helper.h _utils/_struct_utils.h)
