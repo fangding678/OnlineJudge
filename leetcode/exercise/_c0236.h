@@ -17,8 +17,19 @@ struct TreeNode {
 
 class Solution {
 public:
+    vector<TreeNode*> findPath(TreeNode* root, Tree* p) {
+        stack<TreeNode*> st;
+    }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-
+        vector<TreeNode*> path1 = findPath(root, p);
+        vector<TreeNode*> path2 = findPath(root, q);
+        int i = 0;
+        for (i=1; i<path1.size() && i<path2.size(); ++i) {
+            if (path1[i] != path2[i]) {
+                return path1[i-1];
+            }
+        }
+        return path1[i-1];
     }
 };
 
