@@ -133,6 +133,26 @@ public:
     }
     void printPostOrder() {
         cout << "begin PostOrder..." << endl;
+        stack<TreeNode *> st;
+        TreeNode *pre = nullptr;
+        TreeNode *cur;
+        st.push(root);
+        while (!st.empty()) {
+            cur = st.top();
+            if ((!cur->left && !cur->right) || (pre && (pre==cur->left || pre==cur->right))) {
+                cout << cur->val << "\t";
+                pre = cur;
+                st.pop();
+            } else {
+                if (cur->right) {
+                    st.push(cur->right);
+                }
+                if (cur->left) {
+                    st.push(cur->left);
+                }
+            }
+        }
+        cout << endl;
         cout << "end PostOrder..." << endl;
     }
     TreeNode *getRoot() {

@@ -55,7 +55,7 @@ void func() {
     TreeNode *root = tree.getRoot();
     TreeNode *p = root->left;
     TreeNode *q = root->right;
-    tree.printInOrder();
+    tree.printPostOrder();
     TreeNode *comNode = solution.lowestCommonAncestor(root, p, q);
     cout << comNode->val << endl;
 }
