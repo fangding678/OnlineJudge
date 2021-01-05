@@ -11,33 +11,25 @@ using namespace std;
 
 class Solution {
 public:
-    vector<TreeNode*> findPath(TreeNode* root, TreeNode* p) {
-        stack<TreeNode*> st;
-        vector<TreeNode*> path;
-        TreeNode *t = root;
+    bool findPath(TreeNode* t, TreeNode* p, vector<TreeNode*> &path) {
         if (!t) {
-            return path;
+            return false;
         }
-        while (!st.empty() || t) {
-            while (t) {
-                path.push_back(t);
-                if (t == p) {
-                    return path;
-                }
-                st.push(t);
-                t = t->left;
-            }
-            if (!st.empty()) {
-                t = st.top();
-                st.pop();
-                t = t->right;
-            }
+        path.push_back(t);
+        if (t->val == p->val) {
+            return true;
         }
-        return path;
+        if (findPath(t->left, p, path) || findPath(t->right, p, path)) {
+            return true;
+        }
+        path.pop_back();
+        return false;
     }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        vector<TreeNode*> path1 = findPath(root, p);
-        vector<TreeNode*> path2 = findPath(root, q);
+        vector<TreeNode*> path1;
+        vector<TreeNode*> path2;
+        findPath(root, p, path1);
+        findPath(root, q, path2);
         int i;
         for (i=1; i<path1.size() && i<path2.size(); ++i) {
             if (path1[i] != path2[i]) {
@@ -55,7 +47,7 @@ void func() {
     TreeNode *root = tree.getRoot();
     TreeNode *p = root->left;
     TreeNode *q = root->right;
-    tree.printPostOrder();
+//    tree.printPostOrder();
     TreeNode *comNode = solution.lowestCommonAncestor(root, p, q);
     cout << comNode->val << endl;
 }
