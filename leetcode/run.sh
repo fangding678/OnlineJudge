@@ -34,7 +34,7 @@ function batch_process()
 function batch_copy()
 {
     cd ..
-    for i in {235..242}
+    for i in {300..306}
     do
         echo $i
         cmd="cp exercise/_c0xxx.h exercise/_c0${i}.h"
