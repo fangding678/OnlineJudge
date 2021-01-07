@@ -8,11 +8,15 @@
 using namespace std;
 
 class Solution {
+public:
+    vector<int> diffWaysToCompute(string input) {
+        vector<int> ans;
+        return ans;
+    }
 };
 
 void func() {
     Solution solution;
-    string str = "ads";
-    cout << str << endl;
+    _print(solution.diffWaysToCompute(""));
 }
 
