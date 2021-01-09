@@ -13,6 +13,8 @@
 #include <cmath>
 #include <utility>
 #include <unordered_map>
+#include <codecvt>
+#include <locale>
 using namespace std;
 
 #ifndef ONLINEJUDGE_UTILS_H
