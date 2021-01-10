@@ -13,6 +13,7 @@
 #include <cmath>
 #include <utility>
 #include <unordered_map>
+#include <memory.h>
 #include <codecvt>
 #include <locale>
 using namespace std;
