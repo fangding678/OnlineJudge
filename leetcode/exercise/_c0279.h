@@ -8,11 +8,15 @@
 using namespace std;
 
 class Solution {
+public:
+    int numSquares(int n) {
+        ;
+    }
 };
 
 void func() {
     Solution solution;
-    string str = "ads";
-    cout << str << endl;
+    cout << solution.numSquares(12) << endl;
+    cout << solution.numSquares(15) << endl;
 }
 
