@@ -9,7 +9,7 @@ using namespace std;
 #include "../_utils/_debug.h"
 #include "../_utils/_struct_utils.h"
 #include "../_utils/_test.h"
-#include "exercise/_c0282.h"
+#include "exercise/_c0289.h"
 
 
 int main(int argc,char *argv[])

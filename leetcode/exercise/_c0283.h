@@ -8,11 +8,25 @@
 using namespace std;
 
 class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int s = 0, e = 0;
+        while (e < nums.size()) {
+            if (nums[e] != 0) {
+                nums[s++] = nums[e++];
+            } else {
+                ++e;
+            }
+        }
+        while (s < nums.size()) {
+            nums[s++] = 0;
+        }
+    }
 };
 
 void func() {
     Solution solution;
-    string str = "ads";
-    cout << str << endl;
+    vector<int> v1{0,1,0,3,12};
+    solution.moveZeroes(v1);
 }
 
