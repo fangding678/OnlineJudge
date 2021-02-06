@@ -8,11 +8,18 @@
 using namespace std;
 
 class Solution {
+public:
+    bool canWinNim(int n) {
+        return n & 3;
+    }
 };
 
 void func() {
     Solution solution;
-    string str = "ads";
-    cout << str << endl;
+    cout << solution.canWinNim(4) << endl;
+    cout << solution.canWinNim(5) << endl;
+    cout << solution.canWinNim(6) << endl;
+    cout << solution.canWinNim(7) << endl;
+    cout << solution.canWinNim(8) << endl;
 }
 
