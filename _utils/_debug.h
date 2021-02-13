@@ -10,6 +10,7 @@
 #include <algorithm>
 #include <map>
 #include <set>
+#include <sstream>
 #include <cmath>
 #include <utility>
 #include <unordered_map>
