@@ -8,11 +8,16 @@
 using namespace std;
 
 class Solution {
+public:
+    vector<string> removeInvalidParentheses(string s) {
+        ;
+    }
 };
 
 void func() {
     Solution solution;
-    string str = "ads";
-    cout << str << endl;
+    _print(solution.removeInvalidParentheses("()())()"));
+    _print(solution.removeInvalidParentheses("(a)())()"));
+    _print(solution.removeInvalidParentheses(")("));
 }
 
