@@ -66,6 +66,14 @@ void _print(map<T2, V2> &mp) {
     cout << endl;
 }
 
+template <typename T2, typename V2>
+void _print(unordered_map<T2, V2> &mp) {
+    for (auto &m : mp) {
+        cout << m.first << ":" << m.second << " ";
+    }
+    cout << endl;
+}
+
 template <typename T3>
 void _print(stack<T3> st) {
     while (!st.empty()) {
