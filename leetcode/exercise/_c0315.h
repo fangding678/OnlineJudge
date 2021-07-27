@@ -8,11 +8,17 @@
 using namespace std;
 
 class Solution {
+public:
+    vector<int> countSmaller(vector<int>& nums) {
+        ;
+    }
 };
 
 void func() {
     Solution solution;
-    string str = "ads";
-    cout << str << endl;
+    vector<int> vec1{5,2,6,1};
+    _print(solution.countSmaller(vec1));
+    vector<int> vec2{5,2,6,1};
+    _print(solution.countSmaller(vec2));
 }
 
