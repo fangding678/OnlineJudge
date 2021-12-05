@@ -23,6 +23,14 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
+//Definition for a segment tree node.
+struct SegNode {
+    int start, end;
+    int value;
+    SegNode *left, *right;
+    SegNode(int s, int e): start(s), end(e), value(0), left(nullptr), right(nullptr) {}
+};
+
 class List {
 public:
     List(): head(nullptr) {
