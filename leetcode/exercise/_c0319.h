@@ -10,15 +10,15 @@ using namespace std;
 class Solution {
 public:
     int bulbSwitch(int n) {
-        int ans = 0;
+        int ans = sqrt(n);
         return ans;
     }
 };
 
 void func() {
     Solution solution;
-    cout << solution.bulbSwitch(0) << endl;
     cout << solution.bulbSwitch(1) << endl;
     cout << solution.bulbSwitch(4) << endl;
+    cout << solution.bulbSwitch(1000) << endl;
 }
 
