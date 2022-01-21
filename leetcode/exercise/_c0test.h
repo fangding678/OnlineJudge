@@ -17,9 +17,9 @@ enum AdType{
     AD_NEW,
 };
 
-class Solution {
+class Test {
 public:
-    vector<int> maxNumber(vector<int>& nums1, vector<int>& nums2, int k) {
+    vector<int> fun_test1(vector<int>& nums1, vector<int>& nums2, int k) {
         vector<int64_t> ans;
         vector<int> ans1;
 
@@ -41,16 +41,27 @@ public:
         cout << "res = " << res << endl;
         cout << "AdType::GAME = " << AdType::GAME << endl;
 
+        unordered_map<int, set<string>> a;
+//        set<string> v1;
+//        a[1] = v1;
+        a[1].insert("qew");
+        for(auto it = a[1].begin(); it != a[1].end(); ++it) {
+            cout << *it << endl;
+        }
+        unordered_map<int, int> cnt_map;
+        cnt_map[1]++;
+        cnt_map[1]++;
+        cout << cnt_map[1] << endl;
 
         return ans1;
     }
 };
 
-void func() {
-    Solution solution;
+void run_func() {
+    Test test01;
     vector<int> num1{1, 2};
     vector<int> num2{2, 3};
-    auto ans = solution.maxNumber(num1, num2, 1);
+    auto ans = test01.fun_test1(num1, num2, 1);
     string str = "ads";
     cout << str << endl;
 }

@@ -10,12 +10,14 @@ using namespace std;
 #include "../_utils/_struct_utils.h"
 #include "../_utils/_test.h"
 #include "exercise/_c0321.h"
+#include "exercise/_c0test.h"
 
 
 int main(int argc,char *argv[])
 {
     cout << "begin------------" << endl;
-    func();
+//    func();
+    run_func();
     cout << "end------------" << endl;
     return 0;
 }
