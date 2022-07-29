@@ -17,7 +17,7 @@ enum AdType{
     AD_NEW,
 };
 
-class Test {
+class Test1 {
 public:
     vector<int> fun_test1(vector<int>& nums1, vector<int>& nums2, int k) {
         vector<int64_t> ans;
@@ -58,10 +58,10 @@ public:
 };
 
 void run_func() {
-    Test test01;
+    Test1 test1;
     vector<int> num1{1, 2};
     vector<int> num2{2, 3};
-    auto ans = test01.fun_test1(num1, num2, 1);
+    auto ans = test1.fun_test1(num1, num2, 1);
     string str = "ads";
     cout << str << endl;
 }
